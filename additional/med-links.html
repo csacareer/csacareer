@@ -41,11 +41,11 @@
         </div>
         <script>
                 $( document ).ready(function() {
-                 $.getJSON("https://api.myjson.com/bins/fs9a0", function(data){ 
+                 $.getJSON("https://api.myjson.com/bins/w3qyw", function(data){ 
                      var med_data = '';
                       $.each(data, function(key, value){
                           med_data += '<tr>';
-                          med_data += '<td>'+value.name+'</td>';
+                          med_data += '<td>'+value.title+'</td>';
                           med_data += '<td><a href="'+value.link+'">'+value.link+'</a></td>';
                           med_data += '</tr>';
                       });
