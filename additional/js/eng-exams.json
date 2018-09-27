@@ -1,0 +1,34 @@
+[
+    {
+        "exam":"JEE Main",
+        "link":"https://jeemain.nic.in/"
+    },
+    {
+        "exam":"BITSAT",
+        "link":"http://bitsadmission.com/bitsatmain.aspx"
+    },
+    {
+        "exam":"VITEEE",
+        "link":"http://www.vit.ac.in/btechadmissions/viteee2018"
+    },
+    {
+        "exam":"K-CET",
+        "link":"http://kea.kar.nic.in/"
+    },
+    {
+        "exam":"COMEDK",
+        "link":"https://www.comedk.org/"
+    },
+    {
+        "exam":"SRMJEE",
+        "link":"http://www.srmuniv.ac.in/admission-india/adm-procedure/all-about-srmjeee"
+    },
+    {
+        "exam":"",
+        "link":""
+    },
+    {
+        "exam":"",
+        "link":""
+    }
+]

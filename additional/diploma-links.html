@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diploma Courses</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+    </head>
+    <body>
+        <div class="header">
+            <h1>Diplomas</h1>
+        </div>
+        <h2>Relevant Courses</h2>
+        <div class="showCourses">
+            <table class="table table-bordered table-striped" id="dipc_table">
+                <th>Course Name</th>
+                <th>Insitutes Offering the Course</th>
+            </table>
+        </div>
+        <!--UPDATE JSON-->
+        <script>
+             $( document ).ready(function() {
+                 $.getJSON("https://api.myjson.com/bins/r9nx0", function(data){ 
+                     var eng_data = '';
+                      $.each(data, function(key, value){
+                          eng_data += '<tr>';
+                          eng_data += '<td>'+value.title+'</td>';
+                          eng_data += '<td><a href="'+value.link+'">'+value.link+'</a></td>';
+                          eng_data += '</tr>';
+                      });
+                      $('#dipc_table').append(eng_data);    
+                  });
+                 });
+        </script>
+        <h2>Scholarships</h2>
+        <div class="showData">
+            <table class="table table-bordered table-striped" id="dip_table">
+                <th>Title</th>
+                <th>Link</th>
+            </table>
+        </div>
+        <!--UPDATE JSON-->
+        <script>
+                $( document ).ready(function() {
+                    $.getJSON("https://api.myjson.com/bins/r9nx0", function(data){ 
+                        var eng_data = '';
+                         $.each(data, function(key, value){
+                             eng_data += '<tr>';
+                             eng_data += '<td>'+value.title+'</td>';
+                             eng_data += '<td><a href="'+value.link+'">'+value.link+'</a></td>';
+                             eng_data += '</tr>';
+                         });
+                         $('#dip_table').append(eng_data);    
+                     });
+                    });
+           </script>
+    </body>
+</html>
