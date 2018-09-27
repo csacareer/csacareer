@@ -1,0 +1,9 @@
+eng json - https://api.myjson.com/bins/1577h0
+
+med json - https://api.myjson.com/bins/1a2yms
+
+art json - https://api.myjson.com/bins/sa3n8
+
+com json - https://api.myjson.com/bins/r9nx0
+
+linear-gradient(#e3f0ff, #add6ff);
