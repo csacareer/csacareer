@@ -20,7 +20,7 @@
         </div>
         <script>
                 $( document ).ready(function() {
-                 $.getJSON("https://api.myjson.com/bins/1a2yms", function(data){ 
+                 $.getJSON("https://api.myjson.com/bins/t8v9k", function(data){ 
                      var cularts_data = '';
                       $.each(data, function(key, value){
                           cularts_data += '<tr>';
@@ -31,28 +31,7 @@
                       $('#culartsc_table').append(cularts_data);    
                   });
                  });
-        </script> 
-        <h2>Relevant Entrance Exams</h2>
-        <div class="showColleges">
-            <table class="table table-bordered table-striped" id="culartsee_table">
-                <th>Entrance Exam</th>
-                <th>Link</th>
-            </table>
-        </div>
-        <script>
-                $( document ).ready(function() {
-                 $.getJSON("https://api.myjson.com/bins/1a2yms", function(data){ 
-                     var cularts_data = '';
-                      $.each(data, function(key, value){
-                          cularts_data += '<tr>';
-                          cularts_data += '<td>'+value.title+'</td>';
-                          cularts_data += '<td><a href="'+value.link+'">'+value.link+'</a></td>';
-                          cularts_data += '</tr>';
-                      });
-                      $('#culartsee_table').append(cularts_data);    
-                  });
-                 });
-        </script> 
+        </script>
         <div id="showData">
             <h2>Scholarships</h2>
             <table class="table table-bordered table-striped" id="cularts_table">
