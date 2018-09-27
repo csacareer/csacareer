@@ -21,7 +21,7 @@
         <!--UPDATE JSON-->
         <script>
              $( document ).ready(function() {
-                 $.getJSON("https://api.myjson.com/bins/r9nx0", function(data){ 
+                 $.getJSON("https://api.myjson.com/bins/9lkaw", function(data){ 
                      var eng_data = '';
                       $.each(data, function(key, value){
                           eng_data += '<tr>';
@@ -30,6 +30,28 @@
                           eng_data += '</tr>';
                       });
                       $('#lawc_table').append(eng_data);    
+                  });
+                 });
+        </script>
+        <h2>Entrance Exams</h2>
+        <div class="showColleges">
+            <table class="table table-bordered table-striped" id="lawee_table">
+                <th>Entrance Exam</th>
+                <th>Link</th>
+            </table>
+        </div>
+        <!--UPDATE JSON-->
+        <script>
+             $( document ).ready(function() {
+                 $.getJSON("https://api.myjson.com/bins/10e2iw", function(data){ 
+                     var eng_data = '';
+                      $.each(data, function(key, value){
+                          eng_data += '<tr>';
+                          eng_data += '<td>'+value.title+'</td>';
+                          eng_data += '<td><a href="'+value.link+'">'+value.link+'</a></td>';
+                          eng_data += '</tr>';
+                      });
+                      $('#lawee_table').append(eng_data);    
                   });
                  });
         </script>
