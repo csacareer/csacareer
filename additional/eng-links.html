@@ -44,11 +44,11 @@
         <!--UPDATE LINKS-->
         <script>
             $( document ).ready(function() {
-             $.getJSON("https://api.myjson.com/bins/bdneg", function(data){ 
+             $.getJSON("https://api.myjson.com/bins/1ejs28", function(data){ 
                  var eng_data = '';
                   $.each(data, function(key, value){
                       eng_data += '<tr>';
-                      eng_data += '<td>'+value.exam+'</td>';
+                      eng_data += '<td>'+value.title+'</td>';
                       eng_data += '<td><a href="'+value.link+'">'+value.link+'</a></td>';
                       eng_data += '</tr>';
                   });
